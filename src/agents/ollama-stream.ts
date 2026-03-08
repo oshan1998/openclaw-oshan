@@ -449,7 +449,7 @@ export function createOllamaStreamFn(
         if (options?.apiKey) {
           headers.Authorization = `Bearer ${options.apiKey}`;
         }
-
+        console.log("body", body);
         const response = await fetch(chatUrl, {
           method: "POST",
           headers,
